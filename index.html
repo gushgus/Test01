@@ -1,0 +1,461 @@
+<!--
+  Infographic generated based on student research report.
+  Date: 2025-05-29
+  Generator: Gemini AI
+  Key features: Single HTML file, Tailwind CSS, Chart.js, Responsive Design.
+  Language: Korean text content, English comments as specified.
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미림마이스터고 1학년 3반 학생 AI 사용 실태 조사 보고서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #F4F7F9; /* Light Background */
+            color: #263238; /* Dark Text */
+        }
+        .chart-container {
+            position: relative; /* Required for Chart.js responsiveness */
+            margin: auto;
+            background-color: #FFFFFF; /* Light Background for cards */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .report-card {
+            background-color: #FFFFFF;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .text-primary-blue { color: #2A62B6; }
+        .bg-primary-blue { background-color: #2A62B6; }
+        .text-secondary-teal { color: #4ECDC4; }
+        .bg-secondary-teal { background-color: #4ECDC4; }
+        .text-accent-grey { color: #A9A9A9; }
+        .bg-accent-grey { background-color: #A9A9A9; }
+        .bg-supporting-light-blue { background-color: #E0F2FE; }
+
+        /* Custom styles for report structure */
+        .report-title {
+            font-size: 28px; /* 28pt */
+            font-weight: 900; /* 매우 굵게 (Noto Sans KR 900) */
+            color: #FFFFFF;
+        }
+        .level1-title {
+            font-size: 18px; /* 18pt */
+            font-weight: 700; /* 아주 굵게 (Noto Sans KR 700) */
+            color: #2A62B6; /* Primary Blue */
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #E0F2FE; /* Supporting Light Blue */
+        }
+        .level2-title {
+            font-size: 14px; /* 14pt */
+            font-weight: 700; /* 굵게 (Noto Sans KR 700) */
+            color: #263238; /* Dark Text */
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .level3-title {
+            font-size: 12px; /* 12pt */
+            font-weight: 500; /* 약간 굵게 (Noto Sans KR 500) */
+            color: #263238;
+            margin-top: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+        .body-text {
+            font-size: 11px; /* 11pt */
+            font-weight: 400; /* 중간 (Noto Sans KR 400) */
+            line-height: 1.6;
+        }
+        .highlight-box {
+            background-color: #E0F2FE; /* Supporting Light Blue */
+            padding: 1rem;
+            border-radius: 0.375rem; /* rounded-md */
+            border-left: 4px solid #2A62B6; /* Primary Blue */
+        }
+        .keyword {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            margin: 0.25rem;
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 500; /* medium */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-primary-blue py-8 px-4 text-center shadow-lg">
+        <h1 class="report-title">미림마이스터고 1학년 3반 학생들이 AI에게 가장 많이하는 질문 실태 조사 보고서</h1>
+        <div class="mt-4 text-sm text-gray-200">
+            <p>1학년 3반 1조</p>
+            <p class="font-normal">강별, 이서현, 이하준, 임지수</p>
+            <p class="mt-1">작성일: 2025년 5월 28일</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8 space-y-12">
+
+        <section id="motivation-purpose" aria-labelledby="motivation-purpose-title" class="report-card">
+            <h2 id="motivation-purpose-title" class="level1-title">1. 조사 동기와 목적</h2>
+            <div>
+                <h3 class="level2-title">가. 조사 동기</h3>
+                <p class="body-text">최근 학교 내에서 인공지능(AI) 기술이 빠르게 확산되면서 많은 학생들이 이를 다양한 방식으로 활용하고 있다. 그러나 일부 학생들은 AI를 숙제나 과제 해결에만 의존하거나, 무분별하게 사용하면서 학습 효과가 떨어지는 사례도 나타나고 있다. 이에 따라 AI를 올바르지 않게 사용하는 경향이 늘고 있다는 점이 문제라고 생각하여, 이번 조사를 시작했다.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="level2-title">나. 조사 목적</h3>
+                <p class="body-text">이번 조사의 목적은 학생들이 AI 기술을 보다 바르게 이해하고, 효과적이며 책임감 있게 사용할 수 있도록 방향을 제시하는 데 있다. 이를 통해 학생 개개인의 자기주도적 학습 능력 향상에도 기여할 수 있기를 기대한다.</p>
+            </div>
+        </section>
+
+        <section id="research-plan" aria-labelledby="research-plan-title" class="report-card">
+            <h2 id="research-plan-title" class="level1-title">2. 조사 계획</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="level2-title">가. 조사 기간</h3>
+                    <p class="body-text">조사는 5월 15일(목) 하루 동안 진행했다. 필요 시 상황에 따라 추가적인 조사가 이뤄졌다.</p>
+                </div>
+                <div>
+                    <h3 class="level2-title">나. 조사 대상</h3>
+                    <p class="body-text">미림마이스터고 1학년 3반 학생들 (17명)</p>
+                </div>
+                <div>
+                    <h3 class="level2-title">다. 조사 방법</h3>
+                    <p class="body-text mb-2">조사는 Google 폼을 이용한 설문조사와 직접 인터뷰를 병행하여 실시했다. 설문조사를 통해 전체적인 경향을 파악하고, 인터뷰를 통해 보다 심층적인 의견과 경험을 수집했다. 이를 바탕으로 다양한 시각에서 AI 활용 실태를 분석했다.</p>
+                    <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 body-text">
+                        <div class="flex-1 p-4 bg-supporting-light-blue rounded-lg text-center">
+                            <strong class="text-primary-blue">설문 조사</strong>
+                            <p>전체 경향 파악</p>
+                        </div>
+                        <div class="text-2xl self-center hidden md:block text-primary-blue">&rarr;</div>
+                        <div class="flex-1 p-4 bg-supporting-light-blue rounded-lg text-center">
+                            <strong class="text-primary-blue">직접 인터뷰</strong>
+                            <p>심층 의견 및 경험 수집</p>
+                        </div>
+                        <div class="text-2xl self-center hidden md:block text-primary-blue">&rarr;</div>
+                        <div class="flex-1 p-4 bg-supporting-light-blue rounded-lg text-center">
+                            <strong class="text-primary-blue">결과 분석</strong>
+                            <p>다각적 AI 활용 실태 분석</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research-results" aria-labelledby="research-results-title">
+            <h2 id="research-results-title" class="level1-title text-center mb-8">3. 조사 결과</h2>
+            
+            <div class="report-card mb-8">
+                <h3 class="level2-title text-center">가. 전반적 조사 결과 요약</h3>
+                <p class="body-text text-center mt-2">설문조사 결과, 미림마이스터고 1학년 3반 17명의 학생들은 모두 AI를 한 번 이상 사용해 본 경험이 있으며, AI 사용 중 답변의 부정확성, 신뢰성 부족, 기술적 오류 등으로 불편함을 느낀 경우가 있는 것으로 나타났다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <div class="chart-container w-full max-w-md mx-auto h-80 md:h-96 lg:col-span-1">
+                    <h3 class="level2-title text-center mb-2">나. 설문조사 1: AI 챗봇 질문 빈도</h3>
+                    <canvas id="surveyChart1"></canvas>
+                    <p class="body-text text-xs text-center mt-2 text-accent-grey">주목할 만한 내용: 1학년 3반 학생들은 모두 AI에게 한 번 이상 질문해 본 경험이 있다.</p>
+                </div>
+                
+                <div class="chart-container w-full max-w-md mx-auto h-80 md:h-96 lg:col-span-1">
+                    <h3 class="level2-title text-center mb-2">다. 설문조사 2: 답변 내용과 질문의 관련성</h3>
+                    <canvas id="surveyChart2"></canvas>
+                    <p class="body-text text-xs text-center mt-2 text-accent-grey">주목할 만한 내용: '거의 없다 0%'는 답변 내용이 질문과 관련 없는 경우가 없었다는 의미가 아니라, 그런 경험이 '거의 없었던' 학생이 없음을 의미한다. 즉, 다수가 관련 없는 답변을 경험했으며, AI가 항상 정확하지는 않다는 것을 알 수 있다.</p>
+                </div>
+
+                <div class="chart-container w-full max-w-md mx-auto h-80 md:h-96 lg:col-span-1">
+                     <h3 class="level2-title text-center mb-2">라. 설문조사 3: AI 사용 시 불편함 종류 (복수응답)</h3>
+                    <canvas id="surveyChart3"></canvas>
+                    <p class="body-text text-xs text-center mt-2 text-accent-grey">주목할 만한 내용: '결과의 부정확성 또는 신뢰성 부족'이 가장 큰 불편함으로 나타났다.</p>
+                </div>
+            </div>
+            
+            <div class="report-card mt-8">
+                <h3 class="level2-title text-center">마. 심층 인터뷰 결과 분석</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                    <div class="p-4 bg-supporting-light-blue rounded-lg">
+                        <h4 class="level3-title font-semibold text-primary-blue">인터뷰 대상 1: 김하진 학생</h4>
+                        <p class="body-text mt-1">AI를 주로 "심심하다", "놀아달라"와 같이 심심할 때 놀이 용도로 사용한다고 답했으며, AI 응답에 대한 만족도가 높아 실패 경험이 거의 없다고 답했다. AI 사용 빈도는 낮으며, 일정한 루틴 없이 필요할 때 사용한다고 덧붙였다.</p>
+                    </div>
+                    <div class="p-4 bg-supporting-light-blue rounded-lg">
+                        <h4 class="level3-title font-semibold text-primary-blue">인터뷰 대상자 2: 이유민 학생</h4>
+                        <p class="body-text mt-1">AI를 주로 학업이나 과제 해결에 활용한다고 답했다. AI의 답변이 예상보다 사람과 유사한 반응을 보인다는 점에서 흥미를 느꼈으며, AI 사용 빈도에 대해선 전반적으로 필요할 때만 제한적으로 사용한다고 전했다.</p>
+                    </div>
+                </div>
+                 <p class="body-text text-xs text-center mt-4 text-accent-grey">클로바노트 링크는 개인 정보 보호를 위해 인포그래픽에서 생략함.</p>
+            </div>
+        </section>
+        
+        <section id="word-cloud-section" aria-labelledby="word-cloud-title" class="report-card">
+            <h2 id="word-cloud-title" class="level1-title text-center">주요 키워드</h2>
+            <div class="text-center p-4 body-text">
+                <span class="keyword bg-primary-blue text-white" style="font-size: 1.8em;">AI</span>
+                <span class="keyword bg-secondary-teal text-white" style="font-size: 1.5em;">질문</span>
+                <span class="keyword bg-accent-grey text-white" style="font-size: 1.2em;">답변</span>
+                <span class="keyword bg-primary-blue text-white" style="font-size: 1.6em;">학습</span>
+                <span class="keyword bg-secondary-teal text-white" style="font-size: 1.4em;">과제</span>
+                <span class="keyword bg-accent-grey text-white" style="font-size: 1.3em;">활용</span>
+                <span class="keyword bg-red-400 text-white" style="font-size: 1.7em;">불편함</span>
+                <span class="keyword bg-red-500 text-white" style="font-size: 1.9em;">정확성</span>
+                <span class="keyword bg-red-600 text-white" style="font-size: 1.6em;">신뢰성</span>
+                <span class="keyword bg-orange-400 text-white" style="font-size: 1.2em;">오류</span>
+                <span class="keyword bg-green-400 text-white" style="font-size: 1.1em;">놀이</span>
+                <span class="keyword bg-blue-400 text-white" style="font-size: 1.5em;">효율성</span>
+                <span class="keyword bg-purple-500 text-white" style="font-size: 2em;">설명서</span>
+                <span class="keyword bg-yellow-500 text-gray-800" style="font-size: 1.3em;">자기주도학습</span>
+            </div>
+            <p class="body-text text-xs text-center mt-2 text-accent-grey">보고서 내용 기반 주요 키워드 시각화</p>
+        </section>
+
+        <section id="conclusion-recommendation" aria-labelledby="conclusion-recommendation-title" class="report-card">
+            <h2 id="conclusion-recommendation-title" class="level1-title">4. 결론 및 제언</h2>
+            <div>
+                <h3 class="level2-title">가. 조사 결과 종합 및 주요 발견점</h3>
+                <p class="body-text">미림마이스터고 1학년 3반 17명의 학생들은 AI 챗봇을 1회 이상 사용해 본 적이 있고, 답변 내용이 질문과 상관 없는 경우가 있어 불편을 느꼈던 적이 많았다. 또한 AI 사용 오류로 '결과의 부정확성 또는 신뢰성 부족'을 결과적으로 많이 겪는 불편함이라는 것을 설문 조사를 통해 발견했다. 인터뷰를 통해서는 두 명의 학생에게서 사람과 비슷하게 답변하고 AI 응답의 만족도가 높아 AI 사용을 실패한 적이 없다는 응답을 들어 AI는 점점 사람과 비슷하게 발전해가고 있다는 것을 발견했다.</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="level2-title">나. 조사를 통해 새롭게 알게 된 점 및 느낀 점</h3>
+                <p class="body-text">생각보다 AI를 학업이나 과제, 놀이 용으로 사용하는 학생들이 많다는 것을 알게 됐으며, AI를 잘 활용하는 학생들보다 활용하지 못하는 학생들이 더 많아 AI를 효율적으로 활용할 수 있게 도울 수 있는 방법을 찾으면 좋겠다고 느꼈다.</p>
+            </div>
+            <div class="mt-6 highlight-box">
+                <h3 class="level2-title text-primary-blue">다. 제언 (우리의 다짐)</h3>
+                <p class="body-text font-semibold">미림마이스터고 1학년 3반 학생들이 보다 정확한 정보를 얻을 수 있도록 설명서를 만들어 누구나 쉽고 빠르게 사용할 수 있도록 하겠다.</p>
+            </div>
+        </section>
+
+        <footer class="text-center py-6 mt-12 border-t border-gray-300">
+            <p class="text-sm text-gray-600">&copy; 2025 미림마이스터고 1학년 3반 1조. All rights reserved.</p>
+            <p class="text-xs text-gray-500 mt-1">이 인포그래픽은 제공된 조사 보고서를 기반으로 생성되었습니다.</p>
+        </footer>
+    </main>
+
+    <script>
+        // Helper function to wrap text for chart labels
+        function formatLabel(str, maxWidth) {
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + words[i].length + 1 < maxWidth) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // Chart.js Global Configuration
+        Chart.defaults.font.family = "'Noto Sans KR', sans-serif";
+        Chart.defaults.color = '#263238'; // Dark Text
+
+        // Survey Chart 1: AI Chatbot Question Frequency
+        const surveyCtx1 = document.getElementById('surveyChart1').getContext('2d');
+        // CHART.JS CANVAS FOR SURVEY 1 (Content is JavaScript below)
+        new Chart(surveyCtx1, {
+            type: 'pie',
+            data: {
+                labels: ['가끔 한다', '보통이다', '자주 한다', '항상 한다'],
+                datasets: [{
+                    label: '응답 수',
+                    data: [3, 9, 4, 1], // 0명인 '하지 않는다'는 제외
+                    backgroundColor: [
+                        '#4ECDC4', // Secondary Teal
+                        '#2A62B6', // Primary Blue
+                        '#A9A9A9', // Accent Grey
+                        '#E0F2FE', // Supporting Light Blue
+                    ],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: false,
+                        // text: '평소 AI 챗봇 질문 빈도'
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: { size: 10 }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    const total = context.dataset.data.reduce((acc, val) => acc + val, 0);
+                                    const percentage = ((context.raw / total) * 100).toFixed(1);
+                                    label += `${context.raw}명 (${percentage}%)`;
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Survey Chart 2: Irrelevant Answers Frequency
+        const surveyCtx2 = document.getElementById('surveyChart2').getContext('2d');
+        // CHART.JS CANVAS FOR SURVEY 2 (Content is JavaScript below)
+        new Chart(surveyCtx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['가끔 있다', '보통이다', '자주 있다', '항상 있다'],
+                datasets: [{
+                    label: '응답 수',
+                    data: [11, 2, 3, 1], // 0명인 '거의 없다'는 제외
+                    backgroundColor: [
+                        '#4ECDC4',
+                        '#2A62B6',
+                        '#A9A9A9',
+                        '#E0F2FE',
+                    ],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: false,
+                        // text: '답변 내용과 질문의 관련 없는 경우 빈도'
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: { size: 10 }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    const total = context.dataset.data.reduce((acc, val) => acc + val, 0);
+                                    const percentage = ((context.raw / total) * 100).toFixed(1);
+                                    label += `${context.raw}명 (${percentage}%)`;
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        
+        // Survey Chart 3: Types of Inconvenience (Multiple Responses)
+        const surveyCtx3 = document.getElementById('surveyChart3').getContext('2d');
+        const survey3Labels = [
+            '기술적 오류 (예: 느린 응답, 작동중단)',
+            '사용법의 어려움 (예: 복잡한 인터페이스, 기능 이해 어려움)',
+            '결과의 부정확성 또는 신뢰성 부족',
+            '높은 비용 (유료 서비스의 경우)',
+            '기타'
+        ];
+        const survey3FormattedLabels = survey3Labels.map(label => formatLabel(label, 20));
+
+        // CHART.JS CANVAS FOR SURVEY 3 (Content is JavaScript below)
+        new Chart(surveyCtx3, {
+            type: 'bar', // 가로 막대형 차트는 indexAxis: 'y' 사용
+            data: {
+                labels: survey3FormattedLabels,
+                datasets: [{
+                    label: '응답 수',
+                    data: [6, 2, 12, 3, 1],
+                    backgroundColor: [
+                        '#2A62B6', 
+                        '#4ECDC4', 
+                        '#2A62B6', // 가장 높은 값 강조 또는 다른 색상
+                        '#A9A9A9', 
+                        '#E0F2FE'
+                    ],
+                    borderColor: [
+                        '#2A62B6', 
+                        '#4ECDC4', 
+                        '#1E4887', // 강조된 테두리
+                        '#A9A9A9', 
+                        '#E0F2FE'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y', // 가로 막대 차트
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: false,
+                        // text: 'AI 사용 시 불편함 종류 (복수응답)'
+                    },
+                    legend: {
+                        display: false // 단일 데이터셋이므로 범례 불필요
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.x !== null) {
+                                    // 전체 응답자 수 (17명) 기준으로 비율 계산
+                                    const totalRespondents = 17; 
+                                    const percentage = ((context.raw / totalRespondents) * 100).toFixed(1);
+                                    label += `${context.raw}명 (${percentage}%)`;
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '응답 수 (명)',
+                            font: { size: 10 }
+                        },
+                        ticks: {
+                             font: { size: 10 }
+                        }
+                    },
+                    y: {
+                       ticks: {
+                            font: { size: 10 },
+                            // autoSkip: false // 모든 레이블 표시
+                       }
+                    }
+                }
+            }
+        });
+
+    </script>
+    </body>
+</html>
